@@ -14,3 +14,11 @@ https://book-exchange-assignment-1.onrender.com
 - after making db models and specifying to relationship between models i started code
 - i first setup the backend and add all api routes that is needed and then code in the end
 - i face few issues but solving this assignment was fun
+
+# email and password
+-  email - demo@email.com
+-  password - 1234
+
+## Project Video
+https://github.com/user-attachments/assets/a5fc095f-42dc-4923-ab02-79f18122aa84
+
