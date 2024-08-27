@@ -40,11 +40,11 @@ const PotentialMatches = () => {
         body: JSON.stringify({ toUserId, toBookId }),
       }
     );
-
     if (!response.ok) {
       console.log(response.message);
       throw new Error(response.message);
     }
+    fetchExchangeRequest()
   };
 
   const getCurrentUser = async () => {
@@ -61,8 +61,6 @@ const PotentialMatches = () => {
     }
     const data = await response.json();
     setUser(data);
-    // console.log(data)
-    // console.log(user);
   };
   const fetchExchangeRequest = async () => {
     const response = await fetch(`${API_BASE_URL}/exchange/exchange-requests`, {
@@ -79,7 +77,6 @@ const PotentialMatches = () => {
     }
     const data = await response.json();
     setExchanges(data);
-    console.log(data);
   };
   return (
     <div className="container mx-auto">
